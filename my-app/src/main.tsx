@@ -5,6 +5,7 @@ import Homepage from './Pages/Homepage.tsx'
 import Projects from './Pages/Projects.tsx';
 import About from './Pages/About.tsx';
 import App from './App.tsx';
+import CollapseExample from './Pages/CollapseExample.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
         <NavLink to= "Projects">Projects</NavLink>
         <NavLink to= "About">About</NavLink>
         <NavLink to= "App">App</NavLink>
+        <NavLink to= "CollapseExample">Collapse Example</NavLink>
       </nav>
     </header>
     <main>
@@ -23,6 +25,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<Homepage />} />
         <Route path="projects" element={<Projects />} />
         <Route path="about" element={<About/>} />
+        <Route path="CollapseExample" element={<CollapseExample />} />
       </Routes>
       
     </main>
