@@ -4,8 +4,7 @@ function Homepage() {
   const navigate = useNavigate();
   return (
     <>
-      <section id ="hero">
-        
+      <section id ="hero" >
         <div className="hero-image">
           <img src={heroImage} alt="Hero" />  
           <h1>Hello I'm Samuel</h1> 
@@ -13,9 +12,9 @@ function Homepage() {
         
       </section>
       <section id = "projects">
-        <div className = "projects">
+        <div>
             <h3>Projects</h3>
-            <p>
+            <p className="text-green-500">
               A list of projects that showcase the skills and expertise that I possess. Each of the project is a demonstration of my ability to solve problems, create solutions and become providing real world value.
             </p>
             <button onClick={() => navigate("/Projects")}>Explore Projects Page</button>
